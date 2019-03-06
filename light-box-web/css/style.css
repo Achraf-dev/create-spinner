@@ -1,0 +1,84 @@
+
+body {
+   
+   height: 4000px; 
+   background: #333;
+}
+
+.spinner{
+margin: 100px;
+position: relative;
+}
+
+.spinner .circle{
+
+    
+    border-radius: 50%;/*houwa fel asl mouraba3, raditou dawira bel faza hethi*/
+    border: 5px solid transparent;
+    border-top-color: #15C7CB;/*hethia elli tkhali nos deyra bitha*/
+    animation: rotate 1s linear infinite;/*hethom metkemlin m3a el keyframe houma elli ykhaliw l'animation tsir*/
+    position: absolute;/*bech lekhtout yetsafefou ba7tha b3ath'hom*/
+}
+.spinner .circle.eins{
+
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    top: 50px;
+    animation-duration: .85s;
+}
+
+.spinner .circle.zwei{
+
+    width: 75px;
+    height: 75px;
+    left: 38px;
+    top: 38px;
+    animation-duration: .95s;
+}
+
+.spinner .circle.drei{
+    width: 100px;
+    height: 100px;
+    left: 25px;
+    top: 25px;
+    animation-duration: 1.05s;
+}
+
+@keyframes rotate{/*ydour 3ala nafsou */
+
+    from{
+        transform: rotate(0deg)
+
+        }
+    to{
+    transform: rotate(360deg)
+       }
+                   }
+/*  spiner 2      */
+
+
+         .spiner2{
+
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 50px;
+            border: 5px solid rgba(0, 0, 0, .1);
+            border-left: 5px solid #f00;
+            border-right: 5px solid #f00;
+            animation: spinner 1.5s linear infinite;
+            position: relative;
+            top: 250px;
+            
+         }   
+         @keyframes spinner{
+             from{
+
+                transform: rotate(0deg)
+             }
+             to{
+                 transform: rotate(360deg)
+             }
+         }
+         
